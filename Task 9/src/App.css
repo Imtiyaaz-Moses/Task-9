@@ -1,0 +1,113 @@
+/* The text will be aligned to the center. */
+.App {
+    text-align: center;
+}
+
+/* The text colour is Misty Rose. The background colour is Dark Orchid. The items are all centered, as well as justified to the center. The font size is
+40 pixels. */
+.App-header,
+.App-header3 {
+    background-color: #9932CC;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #FFE4E1;
+}
+
+/* The text colour is Misty Rose. The background colour is Grey. The items are all centered, as well as justified to the center. The font size is
+40 pixels. */
+.App-header2 {
+    background-color: #808080;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #FF69B4;
+}
+
+/* The background colour is Light Sky Blue. */
+#back {
+    background-color: #87CEFA;
+}
+
+/* The text will be aligned to the center. The font family is sans serif. The font will be bold, with a font size of 20 pixels. The background colour 
+will be  and the font colour will be Misty Rose. */
+#menuit,
+.currentcv {
+    text-align: center;
+    color: #FF69B4;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #FFEBCD;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* The text will be aligned to the center. The font family is sans serif. The font will be bold, with a font size of 20 pixels. The background colour 
+will be Powder Blue and the font colour will be Misty Rose. */
+.textbox {
+    text-align: center;
+    color: #FF69B4;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #B0E0E6;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* The text will be aligned to the center. */
+body {
+    text-align: center;
+}
+
+/* Setting the height and width of the border, as well as the style. */
+.flip {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 5px solid #FF69B4;
+}
+
+/* Position the front of the card. */
+.fci {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* When the card is clicked and held, it is flipped over to the other side. */
+.flip:active .fci {
+    transform: rotateY(180deg);
+}
+
+/* Position both sides of the card. */
+.frontofcard,
+.backofcard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the back of the card. The font family is sans serif. The font will be bold, with a font size of 20 pixels. The background colour 
+will be Blanched Almond and the font colour will be Forest Green. */
+.backofcard {
+    background-color: #FFEBCD;
+    color: #228B22;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    transform: rotateY(180deg);
+}
+
+/* Image width and height set. */
+img {
+    width: 300px;
+    height: 200px;
+}
